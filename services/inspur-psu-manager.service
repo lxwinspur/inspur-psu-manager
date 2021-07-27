@@ -1,0 +1,11 @@
+[Unit]
+Description=Inspur PSU Manager.
+Before=xyz.openbmc_project.FruDevice.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/inspur-psuManager
+SyslogIdentifier=inspur-psuManager
+
+[Install]
+WantedBy=multi-user.target
