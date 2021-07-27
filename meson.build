@@ -59,6 +59,7 @@ deps = [
 sources = [
     'psu-main.cpp',
     'psu-manager.cpp',
+    'psu-eeprom.cpp',
 ]
 
 executable(
